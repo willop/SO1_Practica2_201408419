@@ -13,8 +13,7 @@ function App() {
       <div id="contenido">
         <h3>RAM</h3>
         <ProgressBar variant="success" now={porcent} />
-        <br/>
-        <br/>
+        <br/><br/>
         <h3>CPU</h3>
         <ProgressBar variant="info" now={porcent} />
       </div>
