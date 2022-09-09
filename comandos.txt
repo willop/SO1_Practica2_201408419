@@ -1,0 +1,14 @@
+Dentro de la carpeta modulos
+make all
+
+ver mensajes de consola
+sudo dmesg
+
+para limpiar la consola
+sudo dmesg -C
+
+para insertar el modulo
+sudo insmod ram_201408419.ko
+
+Para eliminar el modulo
+sudo rmmod ram_201408419.ko
