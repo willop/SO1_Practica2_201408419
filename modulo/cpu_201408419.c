@@ -25,7 +25,7 @@ struct list_head *hijos;
 //Funcion que se ejecutara que se lea el archivo con el comando CAT
 static int escribir_archivo(struct seq_file *archivo, void *v)
 {    
-    /*unsigned long rss;
+    //unsigned long rss;
 
     bool aux = true;
     bool aux2 = true;
@@ -64,36 +64,8 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
         seq_printf(archivo, "]\n");
         seq_printf(archivo, "}\n");
     }
-    seq_printf(archivo, "]\n}");*/
+    seq_printf(archivo, "]\n}");
 
-    unsigned long rss;
-
-	seq_printf(archivo, "[ { \"Nombre\": \"\", \"PID\": -1, \"Estado\": \"-1\", \"RAM\": -1, \"UID\": -1, \"Usuario\": \"\", \"SubProcesos\": [] }");
-
-	for_each_process(proceso){
-		if (proceso->mm) {
-			rss = get_mm_rss(proceso->mm) << PAGE_SHIFT;
-			seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": %lu, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": ", proceso->comm, proceso->pid, proceso->__state, rss, __kuid_val(proceso->cred->uid));
-		} else {
-			seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": 0, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": ", proceso->comm, proceso->pid, proceso->__state, __kuid_val(proceso->cred->uid));
-		}
-
-		seq_printf(archivo, "[ { \"Nombre\": \"\", \"PID\": -1, \"Estado\": \"-1\", \"RAM\": -1, \"UID\": -1, \"Usuario\": \"\", \"SubProcesos\": [] }");
-
-		list_for_each(hijos, &(proceso->children)){
-			hijo = list_entry(hijos, struct task_struct, sibling);
-
-			if (hijo->mm) {
-				rss = get_mm_rss(hijo->mm) << PAGE_SHIFT;
-				seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": %lu, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": [] }", hijo->comm, hijo->pid, hijo->__state, rss, __kuid_val(hijo->cred->uid));
-			} else {
-				seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": 0, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": [] }", hijo->comm, hijo->pid, hijo->__state, __kuid_val(hijo->cred->uid));
-			}
-		}
-
-		seq_printf(archivo, "]}");
-	}
-	seq_printf(archivo, "]");
     return 0;
 }
 
