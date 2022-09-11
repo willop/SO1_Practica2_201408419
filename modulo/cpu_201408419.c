@@ -15,9 +15,9 @@ MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Creacion de modulo, Laboratorio Sistemas Operativos 1");
 MODULE_AUTHOR("Wilfred Stewart Perez Solorzano");
 
-//struct task_struct * cpu;
-//struct task_struct * hijos;
-//struct list_head * listProcesos;
+struct task_struct * cpu;
+struct task_struct * hijos;
+struct list_head * listProcesos;
 
 struct task_struct *proceso, *hijo;
 struct list_head *hijos;
