@@ -5,180 +5,92 @@
             "nproceso": "systemd",
             "hijos": [
                 {
-                    "hid": "328",
+                    "hid": "170",
                     "hnombre": "systemd-journal"
                 },
                 {
-                    "hid": "377",
+                    "hid": "201",
                     "hnombre": "systemd-udevd"
                 },
                 {
-                    "hid": "471",
+                    "hid": "323",
+                    "hnombre": "multipathd"
+                },
+                {
+                    "hid": "445",
+                    "hnombre": "systemd-network"
+                },
+                {
+                    "hid": "448",
                     "hnombre": "systemd-resolve"
                 },
                 {
-                    "hid": "472",
-                    "hnombre": "systemd-timesyn"
-                },
-                {
-                    "hid": "530",
+                    "hid": "483",
                     "hnombre": "accounts-daemon"
                 },
                 {
-                    "hid": "552",
-                    "hnombre": "acpid"
+                    "hid": "496",
+                    "hnombre": "chronyd"
                 },
                 {
-                    "hid": "564",
-                    "hnombre": "avahi-daemon"
-                },
-                {
-                    "hid": "566",
-                    "hnombre": "cron"
-                },
-                {
-                    "hid": "567",
-                    "hnombre": "cupsd"
-                },
-                {
-                    "hid": "568",
+                    "hid": "499",
                     "hnombre": "dbus-daemon"
                 },
                 {
-                    "hid": "569",
-                    "hnombre": "NetworkManager"
+                    "hid": "503",
+                    "hnombre": "google_osconfig"
                 },
                 {
-                    "hid": "658",
-                    "hnombre": "irqbalance"
-                },
-                {
-                    "hid": "660",
+                    "hid": "515",
                     "hnombre": "networkd-dispat"
                 },
                 {
-                    "hid": "665",
-                    "hnombre": "polkitd"
-                },
-                {
-                    "hid": "667",
+                    "hid": "516",
                     "hnombre": "rsyslogd"
                 },
                 {
-                    "hid": "668",
+                    "hid": "525",
                     "hnombre": "snapd"
                 },
                 {
-                    "hid": "716",
-                    "hnombre": "switcheroo-cont"
+                    "hid": "530",
+                    "hnombre": "atd"
                 },
                 {
-                    "hid": "717",
-                    "hnombre": "systemd-logind"
+                    "hid": "596",
+                    "hnombre": "google_guest_ag"
                 },
                 {
-                    "hid": "718",
-                    "hnombre": "systemd-machine"
+                    "hid": "640",
+                    "hnombre": "polkitd"
                 },
                 {
-                    "hid": "719",
-                    "hnombre": "thermald"
+                    "hid": "688",
+                    "hnombre": "agetty"
                 },
                 {
-                    "hid": "720",
-                    "hnombre": "udisksd"
-                },
-                {
-                    "hid": "721",
-                    "hnombre": "wpa_supplicant"
-                },
-                {
-                    "hid": "785",
-                    "hnombre": "bluetoothd"
-                },
-                {
-                    "hid": "801",
-                    "hnombre": "cups-browsed"
-                },
-                {
-                    "hid": "826",
-                    "hnombre": "ModemManager"
-                },
-                {
-                    "hid": "854",
-                    "hnombre": "libvirtd"
-                },
-                {
-                    "hid": "857",
+                    "hid": "691",
                     "hnombre": "unattended-upgr"
                 },
                 {
-                    "hid": "872",
-                    "hnombre": "containerd"
+                    "hid": "698",
+                    "hnombre": "agetty"
                 },
                 {
-                    "hid": "949",
-                    "hnombre": "apache2"
+                    "hid": "707",
+                    "hnombre": "sshd"
                 },
                 {
-                    "hid": "1010",
-                    "hnombre": "gdm3"
+                    "hid": "739",
+                    "hnombre": "systemd-logind"
                 },
                 {
-                    "hid": "1051",
-                    "hnombre": "whoopsie"
+                    "hid": "742",
+                    "hnombre": "cron"
                 },
                 {
-                    "hid": "1058",
-                    "hnombre": "kerneloops"
-                },
-                {
-                    "hid": "1060",
-                    "hnombre": "kerneloops"
-                },
-                {
-                    "hid": "1365",
-                    "hnombre": "dnsmasq"
-                },
-                {
-                    "hid": "1393",
-                    "hnombre": "dockerd"
-                },
-                {
-                    "hid": "1408",
-                    "hnombre": "rtkit-daemon"
-                },
-                {
-                    "hid": "1968",
-                    "hnombre": "upowerd"
-                },
-                {
-                    "hid": "2477",
-                    "hnombre": "containerd-shim"
-                },
-                {
-                    "hid": "2916",
-                    "hnombre": "colord"
-                },
-                {
-                    "hid": "3082",
-                    "hnombre": "mount.ntfs"
-                },
-                {
-                    "hid": "17906",
-                    "hnombre": "rmmod"
-                },
-                {
-                    "hid": "24919",
-                    "hnombre": "fwupd"
-                },
-                {
-                    "hid": "26202",
+                    "hid": "2394",
                     "hnombre": "systemd"
-                },
-                {
-                    "hid": "26216",
-                    "hnombre": "gnome-keyring-d"
                 }
             ]
         },
@@ -201,6 +113,10 @@
                 {
                     "hid": "7",
                     "hnombre": "kworker/0:0H"
+                },
+                {
+                    "hid": "9",
+                    "hnombre": "kworker/0:1H"
                 },
                 {
                     "hid": "10",
@@ -231,524 +147,232 @@
                     "hnombre": "idle_inject/0"
                 },
                 {
-                    "hid": "17",
+                    "hid": "18",
                     "hnombre": "cpuhp/0"
                 },
                 {
-                    "hid": "18",
+                    "hid": "19",
                     "hnombre": "cpuhp/1"
                 },
                 {
-                    "hid": "19",
+                    "hid": "20",
                     "hnombre": "idle_inject/1"
                 },
                 {
-                    "hid": "20",
+                    "hid": "21",
                     "hnombre": "migration/1"
                 },
                 {
-                    "hid": "21",
+                    "hid": "22",
                     "hnombre": "ksoftirqd/1"
                 },
                 {
-                    "hid": "23",
+                    "hid": "24",
                     "hnombre": "kworker/1:0H"
                 },
                 {
-                    "hid": "24",
-                    "hnombre": "cpuhp/2"
-                },
-                {
                     "hid": "25",
-                    "hnombre": "idle_inject/2"
-                },
-                {
-                    "hid": "26",
-                    "hnombre": "migration/2"
-                },
-                {
-                    "hid": "27",
-                    "hnombre": "ksoftirqd/2"
-                },
-                {
-                    "hid": "29",
-                    "hnombre": "kworker/2:0H"
-                },
-                {
-                    "hid": "30",
-                    "hnombre": "cpuhp/3"
-                },
-                {
-                    "hid": "31",
-                    "hnombre": "idle_inject/3"
-                },
-                {
-                    "hid": "32",
-                    "hnombre": "migration/3"
-                },
-                {
-                    "hid": "33",
-                    "hnombre": "ksoftirqd/3"
-                },
-                {
-                    "hid": "35",
-                    "hnombre": "kworker/3:0H"
-                },
-                {
-                    "hid": "36",
-                    "hnombre": "cpuhp/4"
-                },
-                {
-                    "hid": "37",
-                    "hnombre": "idle_inject/4"
-                },
-                {
-                    "hid": "38",
-                    "hnombre": "migration/4"
-                },
-                {
-                    "hid": "39",
-                    "hnombre": "ksoftirqd/4"
-                },
-                {
-                    "hid": "41",
-                    "hnombre": "kworker/4:0H"
-                },
-                {
-                    "hid": "42",
-                    "hnombre": "cpuhp/5"
-                },
-                {
-                    "hid": "43",
-                    "hnombre": "idle_inject/5"
-                },
-                {
-                    "hid": "44",
-                    "hnombre": "migration/5"
-                },
-                {
-                    "hid": "45",
-                    "hnombre": "ksoftirqd/5"
-                },
-                {
-                    "hid": "47",
-                    "hnombre": "kworker/5:0H"
-                },
-                {
-                    "hid": "48",
-                    "hnombre": "cpuhp/6"
-                },
-                {
-                    "hid": "49",
-                    "hnombre": "idle_inject/6"
-                },
-                {
-                    "hid": "50",
-                    "hnombre": "migration/6"
-                },
-                {
-                    "hid": "51",
-                    "hnombre": "ksoftirqd/6"
-                },
-                {
-                    "hid": "53",
-                    "hnombre": "kworker/6:0H"
-                },
-                {
-                    "hid": "54",
-                    "hnombre": "cpuhp/7"
-                },
-                {
-                    "hid": "55",
-                    "hnombre": "idle_inject/7"
-                },
-                {
-                    "hid": "56",
-                    "hnombre": "migration/7"
-                },
-                {
-                    "hid": "57",
-                    "hnombre": "ksoftirqd/7"
-                },
-                {
-                    "hid": "59",
-                    "hnombre": "kworker/7:0H"
-                },
-                {
-                    "hid": "60",
                     "hnombre": "kdevtmpfs"
                 },
                 {
-                    "hid": "61",
+                    "hid": "26",
                     "hnombre": "inet_frag_wq"
                 },
                 {
-                    "hid": "62",
+                    "hid": "27",
                     "hnombre": "kauditd"
                 },
                 {
-                    "hid": "63",
+                    "hid": "29",
                     "hnombre": "khungtaskd"
                 },
                 {
-                    "hid": "64",
+                    "hid": "30",
                     "hnombre": "oom_reaper"
                 },
                 {
-                    "hid": "65",
+                    "hid": "31",
                     "hnombre": "writeback"
                 },
                 {
-                    "hid": "66",
+                    "hid": "32",
                     "hnombre": "kcompactd0"
                 },
                 {
-                    "hid": "67",
+                    "hid": "33",
                     "hnombre": "ksmd"
                 },
                 {
-                    "hid": "68",
+                    "hid": "34",
                     "hnombre": "khugepaged"
                 },
                 {
-                    "hid": "115",
+                    "hid": "80",
                     "hnombre": "kintegrityd"
                 },
                 {
-                    "hid": "116",
+                    "hid": "81",
                     "hnombre": "kblockd"
                 },
                 {
-                    "hid": "117",
+                    "hid": "82",
                     "hnombre": "blkcg_punt_bio"
                 },
                 {
-                    "hid": "119",
+                    "hid": "83",
                     "hnombre": "tpm_dev_wq"
                 },
                 {
-                    "hid": "120",
+                    "hid": "84",
                     "hnombre": "ata_sff"
                 },
                 {
-                    "hid": "121",
+                    "hid": "85",
                     "hnombre": "md"
                 },
                 {
-                    "hid": "122",
+                    "hid": "86",
                     "hnombre": "edac-poller"
                 },
                 {
-                    "hid": "123",
+                    "hid": "87",
                     "hnombre": "devfreq_wq"
                 },
                 {
-                    "hid": "124",
+                    "hid": "88",
                     "hnombre": "watchdogd"
                 },
                 {
-                    "hid": "126",
-                    "hnombre": "kworker/0:1H"
-                },
-                {
-                    "hid": "128",
+                    "hid": "91",
                     "hnombre": "kswapd0"
                 },
                 {
-                    "hid": "129",
+                    "hid": "92",
                     "hnombre": "ecryptfs-kthrea"
                 },
                 {
-                    "hid": "131",
+                    "hid": "94",
                     "hnombre": "kthrotld"
                 },
                 {
-                    "hid": "132",
+                    "hid": "95",
                     "hnombre": "acpi_thermal_pm"
                 },
                 {
-                    "hid": "134",
-                    "hnombre": "vfio-irqfd-clea"
-                },
-                {
-                    "hid": "139",
-                    "hnombre": "mld"
-                },
-                {
-                    "hid": "140",
-                    "hnombre": "kworker/3:1H"
-                },
-                {
-                    "hid": "141",
-                    "hnombre": "ipv6_addrconf"
-                },
-                {
-                    "hid": "152",
-                    "hnombre": "kstrp"
-                },
-                {
-                    "hid": "156",
-                    "hnombre": "zswap-shrink"
-                },
-                {
-                    "hid": "164",
-                    "hnombre": "charger_manager"
-                },
-                {
-                    "hid": "186",
-                    "hnombre": "kworker/1:1H"
-                },
-                {
-                    "hid": "224",
+                    "hid": "96",
                     "hnombre": "scsi_eh_0"
                 },
                 {
-                    "hid": "225",
+                    "hid": "97",
                     "hnombre": "scsi_tmf_0"
                 },
                 {
-                    "hid": "226",
-                    "hnombre": "scsi_eh_1"
+                    "hid": "98",
+                    "hnombre": "nvme-wq"
                 },
                 {
-                    "hid": "227",
-                    "hnombre": "scsi_tmf_1"
+                    "hid": "99",
+                    "hnombre": "kworker/1:1H"
                 },
                 {
-                    "hid": "228",
-                    "hnombre": "scsi_eh_2"
+                    "hid": "100",
+                    "hnombre": "nvme-reset-wq"
                 },
                 {
-                    "hid": "229",
-                    "hnombre": "scsi_tmf_2"
+                    "hid": "101",
+                    "hnombre": "nvme-delete-wq"
                 },
                 {
-                    "hid": "230",
-                    "hnombre": "scsi_eh_3"
+                    "hid": "102",
+                    "hnombre": "vfio-irqfd-clea"
                 },
                 {
-                    "hid": "231",
-                    "hnombre": "scsi_tmf_3"
+                    "hid": "104",
+                    "hnombre": "mld"
                 },
                 {
-                    "hid": "232",
-                    "hnombre": "scsi_eh_4"
+                    "hid": "105",
+                    "hnombre": "ipv6_addrconf"
                 },
                 {
-                    "hid": "233",
-                    "hnombre": "scsi_tmf_4"
+                    "hid": "115",
+                    "hnombre": "kstrp"
                 },
                 {
-                    "hid": "234",
-                    "hnombre": "scsi_eh_5"
+                    "hid": "118",
+                    "hnombre": "zswap-shrink"
                 },
                 {
-                    "hid": "235",
-                    "hnombre": "scsi_tmf_5"
+                    "hid": "119",
+                    "hnombre": "kworker/u5:0"
                 },
                 {
-                    "hid": "240",
-                    "hnombre": "kworker/2:1H"
+                    "hid": "126",
+                    "hnombre": "charger_manager"
                 },
                 {
-                    "hid": "243",
-                    "hnombre": "kworker/7:1H"
+                    "hid": "127",
+                    "hnombre": "jbd2/sda1-8"
                 },
                 {
-                    "hid": "244",
-                    "hnombre": "kworker/5:1H"
-                },
-                {
-                    "hid": "252",
-                    "hnombre": "kworker/6:1H"
-                },
-                {
-                    "hid": "255",
-                    "hnombre": "uas"
-                },
-                {
-                    "hid": "256",
-                    "hnombre": "scsi_eh_6"
-                },
-                {
-                    "hid": "257",
-                    "hnombre": "scsi_tmf_6"
-                },
-                {
-                    "hid": "282",
-                    "hnombre": "jbd2/sdb5-8"
-                },
-                {
-                    "hid": "283",
+                    "hid": "128",
                     "hnombre": "ext4-rsv-conver"
                 },
                 {
-                    "hid": "288",
-                    "hnombre": "kworker/4:1H"
+                    "hid": "131",
+                    "hnombre": "hwrng"
                 },
                 {
-                    "hid": "354",
-                    "hnombre": "ipmi-msghandler"
-                },
-                {
-                    "hid": "478",
+                    "hid": "222",
                     "hnombre": "cryptd"
                 },
                 {
-                    "hid": "504",
-                    "hnombre": "cfg80211"
+                    "hid": "319",
+                    "hnombre": "kaluad"
                 },
                 {
-                    "hid": "611",
-                    "hnombre": "irq/34-iwlwifi"
+                    "hid": "320",
+                    "hnombre": "kmpath_rdacd"
                 },
                 {
-                    "hid": "621",
-                    "hnombre": "card0-crtc0"
+                    "hid": "321",
+                    "hnombre": "kmpathd"
                 },
                 {
-                    "hid": "622",
-                    "hnombre": "card0-crtc1"
+                    "hid": "322",
+                    "hnombre": "kmpath_handlerd"
                 },
                 {
-                    "hid": "623",
-                    "hnombre": "card0-crtc2"
-                },
-                {
-                    "hid": "712",
-                    "hnombre": "kworker/u17:1"
-                },
-                {
-                    "hid": "1083",
-                    "hnombre": "bpfilter_umh"
-                },
-                {
-                    "hid": "1944",
-                    "hnombre": "krfcommd"
-                },
-                {
-                    "hid": "26186",
-                    "hnombre": "kworker/u17:0"
-                },
-                {
-                    "hid": "35452",
-                    "hnombre": "kworker/u16:1"
-                },
-                {
-                    "hid": "39329",
-                    "hnombre": "kworker/u16:2"
-                },
-                {
-                    "hid": "41132",
-                    "hnombre": "kworker/5:2"
-                },
-                {
-                    "hid": "41933",
-                    "hnombre": "kworker/0:0"
-                },
-                {
-                    "hid": "41973",
+                    "hid": "3126",
                     "hnombre": "kworker/1:0"
                 },
                 {
-                    "hid": "42177",
-                    "hnombre": "kworker/u16:3"
+                    "hid": "3148",
+                    "hnombre": "kworker/u4:1"
                 },
                 {
-                    "hid": "42274",
-                    "hnombre": "kworker/6:0"
-                },
-                {
-                    "hid": "42275",
-                    "hnombre": "kworker/7:1"
-                },
-                {
-                    "hid": "42310",
-                    "hnombre": "kworker/2:2"
-                },
-                {
-                    "hid": "42421",
-                    "hnombre": "kworker/4:0"
-                },
-                {
-                    "hid": "42525",
-                    "hnombre": "kworker/3:0"
-                },
-                {
-                    "hid": "43054",
-                    "hnombre": "kworker/6:2"
-                },
-                {
-                    "hid": "43057",
-                    "hnombre": "kworker/7:0"
-                },
-                {
-                    "hid": "43168",
+                    "hid": "3207",
                     "hnombre": "kworker/1:1"
                 },
                 {
-                    "hid": "43179",
-                    "hnombre": "kworker/2:1"
-                },
-                {
-                    "hid": "43184",
-                    "hnombre": "kworker/0:2"
-                },
-                {
-                    "hid": "43186",
-                    "hnombre": "kworker/5:0"
-                },
-                {
-                    "hid": "43275",
-                    "hnombre": "kworker/u17:2"
-                },
-                {
-                    "hid": "43277",
-                    "hnombre": "kworker/4:2"
-                },
-                {
-                    "hid": "43343",
-                    "hnombre": "kworker/3:2"
-                },
-                {
-                    "hid": "43549",
-                    "hnombre": "kworker/6:1"
-                },
-                {
-                    "hid": "43564",
-                    "hnombre": "kworker/7:2"
-                },
-                {
-                    "hid": "43574",
-                    "hnombre": "kworker/1:2"
-                },
-                {
-                    "hid": "43586",
-                    "hnombre": "kworker/5:1"
-                },
-                {
-                    "hid": "43588",
+                    "hid": "3526",
                     "hnombre": "kworker/0:1"
                 },
                 {
-                    "hid": "43603",
-                    "hnombre": "kworker/2:0"
+                    "hid": "3690",
+                    "hnombre": "kworker/u4:0"
                 },
                 {
-                    "hid": "43670",
-                    "hnombre": "kworker/u17:3"
+                    "hid": "6128",
+                    "hnombre": "kworker/0:2"
                 },
                 {
-                    "hid": "44166",
-                    "hnombre": "kworker/u16:0"
+                    "hid": "6758",
+                    "hnombre": "kworker/u4:2"
                 },
                 {
-                    "hid": "44192",
-                    "hnombre": "kworker/4:1"
-                },
-                {
-                    "hid": "44230",
-                    "hnombre": "kworker/3:1"
+                    "hid": "7081",
+                    "hnombre": "kworker/1:2"
                 }
             ]
         },
@@ -770,6 +394,11 @@
         {
             "idp": "7",
             "nproceso": "kworker/0:0H",
+            "hijos": []
+        },
+        {
+            "idp": "9",
+            "nproceso": "kworker/0:1H",
             "hijos": []
         },
         {
@@ -808,2187 +437,506 @@
             "hijos": []
         },
         {
-            "idp": "17",
+            "idp": "18",
             "nproceso": "cpuhp/0",
             "hijos": []
         },
         {
-            "idp": "18",
+            "idp": "19",
             "nproceso": "cpuhp/1",
             "hijos": []
         },
         {
-            "idp": "19",
+            "idp": "20",
             "nproceso": "idle_inject/1",
             "hijos": []
         },
         {
-            "idp": "20",
+            "idp": "21",
             "nproceso": "migration/1",
             "hijos": []
         },
         {
-            "idp": "21",
+            "idp": "22",
             "nproceso": "ksoftirqd/1",
             "hijos": []
         },
         {
-            "idp": "23",
+            "idp": "24",
             "nproceso": "kworker/1:0H",
             "hijos": []
         },
         {
-            "idp": "24",
-            "nproceso": "cpuhp/2",
-            "hijos": []
-        },
-        {
             "idp": "25",
-            "nproceso": "idle_inject/2",
-            "hijos": []
-        },
-        {
-            "idp": "26",
-            "nproceso": "migration/2",
-            "hijos": []
-        },
-        {
-            "idp": "27",
-            "nproceso": "ksoftirqd/2",
-            "hijos": []
-        },
-        {
-            "idp": "29",
-            "nproceso": "kworker/2:0H",
-            "hijos": []
-        },
-        {
-            "idp": "30",
-            "nproceso": "cpuhp/3",
-            "hijos": []
-        },
-        {
-            "idp": "31",
-            "nproceso": "idle_inject/3",
-            "hijos": []
-        },
-        {
-            "idp": "32",
-            "nproceso": "migration/3",
-            "hijos": []
-        },
-        {
-            "idp": "33",
-            "nproceso": "ksoftirqd/3",
-            "hijos": []
-        },
-        {
-            "idp": "35",
-            "nproceso": "kworker/3:0H",
-            "hijos": []
-        },
-        {
-            "idp": "36",
-            "nproceso": "cpuhp/4",
-            "hijos": []
-        },
-        {
-            "idp": "37",
-            "nproceso": "idle_inject/4",
-            "hijos": []
-        },
-        {
-            "idp": "38",
-            "nproceso": "migration/4",
-            "hijos": []
-        },
-        {
-            "idp": "39",
-            "nproceso": "ksoftirqd/4",
-            "hijos": []
-        },
-        {
-            "idp": "41",
-            "nproceso": "kworker/4:0H",
-            "hijos": []
-        },
-        {
-            "idp": "42",
-            "nproceso": "cpuhp/5",
-            "hijos": []
-        },
-        {
-            "idp": "43",
-            "nproceso": "idle_inject/5",
-            "hijos": []
-        },
-        {
-            "idp": "44",
-            "nproceso": "migration/5",
-            "hijos": []
-        },
-        {
-            "idp": "45",
-            "nproceso": "ksoftirqd/5",
-            "hijos": []
-        },
-        {
-            "idp": "47",
-            "nproceso": "kworker/5:0H",
-            "hijos": []
-        },
-        {
-            "idp": "48",
-            "nproceso": "cpuhp/6",
-            "hijos": []
-        },
-        {
-            "idp": "49",
-            "nproceso": "idle_inject/6",
-            "hijos": []
-        },
-        {
-            "idp": "50",
-            "nproceso": "migration/6",
-            "hijos": []
-        },
-        {
-            "idp": "51",
-            "nproceso": "ksoftirqd/6",
-            "hijos": []
-        },
-        {
-            "idp": "53",
-            "nproceso": "kworker/6:0H",
-            "hijos": []
-        },
-        {
-            "idp": "54",
-            "nproceso": "cpuhp/7",
-            "hijos": []
-        },
-        {
-            "idp": "55",
-            "nproceso": "idle_inject/7",
-            "hijos": []
-        },
-        {
-            "idp": "56",
-            "nproceso": "migration/7",
-            "hijos": []
-        },
-        {
-            "idp": "57",
-            "nproceso": "ksoftirqd/7",
-            "hijos": []
-        },
-        {
-            "idp": "59",
-            "nproceso": "kworker/7:0H",
-            "hijos": []
-        },
-        {
-            "idp": "60",
             "nproceso": "kdevtmpfs",
             "hijos": []
         },
         {
-            "idp": "61",
+            "idp": "26",
             "nproceso": "inet_frag_wq",
             "hijos": []
         },
         {
-            "idp": "62",
+            "idp": "27",
             "nproceso": "kauditd",
             "hijos": []
         },
         {
-            "idp": "63",
+            "idp": "29",
             "nproceso": "khungtaskd",
             "hijos": []
         },
         {
-            "idp": "64",
+            "idp": "30",
             "nproceso": "oom_reaper",
             "hijos": []
         },
         {
-            "idp": "65",
+            "idp": "31",
             "nproceso": "writeback",
             "hijos": []
         },
         {
-            "idp": "66",
+            "idp": "32",
             "nproceso": "kcompactd0",
             "hijos": []
         },
         {
-            "idp": "67",
+            "idp": "33",
             "nproceso": "ksmd",
             "hijos": []
         },
         {
-            "idp": "68",
+            "idp": "34",
             "nproceso": "khugepaged",
             "hijos": []
         },
         {
-            "idp": "115",
+            "idp": "80",
             "nproceso": "kintegrityd",
             "hijos": []
         },
         {
-            "idp": "116",
+            "idp": "81",
             "nproceso": "kblockd",
             "hijos": []
         },
         {
-            "idp": "117",
+            "idp": "82",
             "nproceso": "blkcg_punt_bio",
             "hijos": []
         },
         {
-            "idp": "119",
+            "idp": "83",
             "nproceso": "tpm_dev_wq",
             "hijos": []
         },
         {
-            "idp": "120",
+            "idp": "84",
             "nproceso": "ata_sff",
             "hijos": []
         },
         {
-            "idp": "121",
+            "idp": "85",
             "nproceso": "md",
             "hijos": []
         },
         {
-            "idp": "122",
+            "idp": "86",
             "nproceso": "edac-poller",
             "hijos": []
         },
         {
-            "idp": "123",
+            "idp": "87",
             "nproceso": "devfreq_wq",
             "hijos": []
         },
         {
-            "idp": "124",
+            "idp": "88",
             "nproceso": "watchdogd",
             "hijos": []
         },
         {
-            "idp": "126",
-            "nproceso": "kworker/0:1H",
-            "hijos": []
-        },
-        {
-            "idp": "128",
+            "idp": "91",
             "nproceso": "kswapd0",
             "hijos": []
         },
         {
-            "idp": "129",
+            "idp": "92",
             "nproceso": "ecryptfs-kthrea",
             "hijos": []
         },
         {
-            "idp": "131",
+            "idp": "94",
             "nproceso": "kthrotld",
             "hijos": []
         },
         {
-            "idp": "132",
+            "idp": "95",
             "nproceso": "acpi_thermal_pm",
             "hijos": []
         },
         {
-            "idp": "134",
-            "nproceso": "vfio-irqfd-clea",
-            "hijos": []
-        },
-        {
-            "idp": "139",
-            "nproceso": "mld",
-            "hijos": []
-        },
-        {
-            "idp": "140",
-            "nproceso": "kworker/3:1H",
-            "hijos": []
-        },
-        {
-            "idp": "141",
-            "nproceso": "ipv6_addrconf",
-            "hijos": []
-        },
-        {
-            "idp": "152",
-            "nproceso": "kstrp",
-            "hijos": []
-        },
-        {
-            "idp": "156",
-            "nproceso": "zswap-shrink",
-            "hijos": []
-        },
-        {
-            "idp": "164",
-            "nproceso": "charger_manager",
-            "hijos": []
-        },
-        {
-            "idp": "186",
-            "nproceso": "kworker/1:1H",
-            "hijos": []
-        },
-        {
-            "idp": "224",
+            "idp": "96",
             "nproceso": "scsi_eh_0",
             "hijos": []
         },
         {
-            "idp": "225",
+            "idp": "97",
             "nproceso": "scsi_tmf_0",
             "hijos": []
         },
         {
-            "idp": "226",
-            "nproceso": "scsi_eh_1",
+            "idp": "98",
+            "nproceso": "nvme-wq",
             "hijos": []
         },
         {
-            "idp": "227",
-            "nproceso": "scsi_tmf_1",
+            "idp": "99",
+            "nproceso": "kworker/1:1H",
             "hijos": []
         },
         {
-            "idp": "228",
-            "nproceso": "scsi_eh_2",
+            "idp": "100",
+            "nproceso": "nvme-reset-wq",
             "hijos": []
         },
         {
-            "idp": "229",
-            "nproceso": "scsi_tmf_2",
+            "idp": "101",
+            "nproceso": "nvme-delete-wq",
             "hijos": []
         },
         {
-            "idp": "230",
-            "nproceso": "scsi_eh_3",
+            "idp": "102",
+            "nproceso": "vfio-irqfd-clea",
             "hijos": []
         },
         {
-            "idp": "231",
-            "nproceso": "scsi_tmf_3",
+            "idp": "104",
+            "nproceso": "mld",
             "hijos": []
         },
         {
-            "idp": "232",
-            "nproceso": "scsi_eh_4",
+            "idp": "105",
+            "nproceso": "ipv6_addrconf",
             "hijos": []
         },
         {
-            "idp": "233",
-            "nproceso": "scsi_tmf_4",
+            "idp": "115",
+            "nproceso": "kstrp",
             "hijos": []
         },
         {
-            "idp": "234",
-            "nproceso": "scsi_eh_5",
+            "idp": "118",
+            "nproceso": "zswap-shrink",
             "hijos": []
         },
         {
-            "idp": "235",
-            "nproceso": "scsi_tmf_5",
+            "idp": "119",
+            "nproceso": "kworker/u5:0",
             "hijos": []
         },
         {
-            "idp": "240",
-            "nproceso": "kworker/2:1H",
+            "idp": "126",
+            "nproceso": "charger_manager",
             "hijos": []
         },
         {
-            "idp": "243",
-            "nproceso": "kworker/7:1H",
+            "idp": "127",
+            "nproceso": "jbd2/sda1-8",
             "hijos": []
         },
         {
-            "idp": "244",
-            "nproceso": "kworker/5:1H",
-            "hijos": []
-        },
-        {
-            "idp": "252",
-            "nproceso": "kworker/6:1H",
-            "hijos": []
-        },
-        {
-            "idp": "255",
-            "nproceso": "uas",
-            "hijos": []
-        },
-        {
-            "idp": "256",
-            "nproceso": "scsi_eh_6",
-            "hijos": []
-        },
-        {
-            "idp": "257",
-            "nproceso": "scsi_tmf_6",
-            "hijos": []
-        },
-        {
-            "idp": "282",
-            "nproceso": "jbd2/sdb5-8",
-            "hijos": []
-        },
-        {
-            "idp": "283",
+            "idp": "128",
             "nproceso": "ext4-rsv-conver",
             "hijos": []
         },
         {
-            "idp": "288",
-            "nproceso": "kworker/4:1H",
+            "idp": "131",
+            "nproceso": "hwrng",
             "hijos": []
         },
         {
-            "idp": "328",
+            "idp": "170",
             "nproceso": "systemd-journal",
             "hijos": []
         },
         {
-            "idp": "354",
-            "nproceso": "ipmi-msghandler",
-            "hijos": []
-        },
-        {
-            "idp": "377",
+            "idp": "201",
             "nproceso": "systemd-udevd",
             "hijos": []
         },
         {
-            "idp": "471",
-            "nproceso": "systemd-resolve",
-            "hijos": []
-        },
-        {
-            "idp": "472",
-            "nproceso": "systemd-timesyn",
-            "hijos": []
-        },
-        {
-            "idp": "478",
+            "idp": "222",
             "nproceso": "cryptd",
             "hijos": []
         },
         {
-            "idp": "504",
-            "nproceso": "cfg80211",
+            "idp": "319",
+            "nproceso": "kaluad",
             "hijos": []
         },
         {
-            "idp": "530",
+            "idp": "320",
+            "nproceso": "kmpath_rdacd",
+            "hijos": []
+        },
+        {
+            "idp": "321",
+            "nproceso": "kmpathd",
+            "hijos": []
+        },
+        {
+            "idp": "322",
+            "nproceso": "kmpath_handlerd",
+            "hijos": []
+        },
+        {
+            "idp": "323",
+            "nproceso": "multipathd",
+            "hijos": []
+        },
+        {
+            "idp": "445",
+            "nproceso": "systemd-network",
+            "hijos": []
+        },
+        {
+            "idp": "448",
+            "nproceso": "systemd-resolve",
+            "hijos": []
+        },
+        {
+            "idp": "483",
             "nproceso": "accounts-daemon",
             "hijos": []
         },
         {
-            "idp": "552",
-            "nproceso": "acpid",
-            "hijos": []
-        },
-        {
-            "idp": "564",
-            "nproceso": "avahi-daemon",
+            "idp": "496",
+            "nproceso": "chronyd",
             "hijos": [
                 {
-                    "hid": "725",
-                    "hnombre": "avahi-daemon"
+                    "hid": "497",
+                    "hnombre": "chronyd"
                 }
             ]
         },
         {
-            "idp": "566",
-            "nproceso": "cron",
+            "idp": "497",
+            "nproceso": "chronyd",
             "hijos": []
         },
         {
-            "idp": "567",
-            "nproceso": "cupsd",
-            "hijos": []
-        },
-        {
-            "idp": "568",
+            "idp": "499",
             "nproceso": "dbus-daemon",
             "hijos": []
         },
         {
-            "idp": "569",
-            "nproceso": "NetworkManager",
+            "idp": "503",
+            "nproceso": "google_osconfig",
             "hijos": []
         },
         {
-            "idp": "611",
-            "nproceso": "irq/34-iwlwifi",
-            "hijos": []
-        },
-        {
-            "idp": "621",
-            "nproceso": "card0-crtc0",
-            "hijos": []
-        },
-        {
-            "idp": "622",
-            "nproceso": "card0-crtc1",
-            "hijos": []
-        },
-        {
-            "idp": "623",
-            "nproceso": "card0-crtc2",
-            "hijos": []
-        },
-        {
-            "idp": "658",
-            "nproceso": "irqbalance",
-            "hijos": []
-        },
-        {
-            "idp": "660",
+            "idp": "515",
             "nproceso": "networkd-dispat",
             "hijos": []
         },
         {
-            "idp": "665",
-            "nproceso": "polkitd",
-            "hijos": []
-        },
-        {
-            "idp": "667",
+            "idp": "516",
             "nproceso": "rsyslogd",
             "hijos": []
         },
         {
-            "idp": "668",
+            "idp": "525",
             "nproceso": "snapd",
             "hijos": []
         },
         {
-            "idp": "712",
-            "nproceso": "kworker/u17:1",
+            "idp": "530",
+            "nproceso": "atd",
             "hijos": []
         },
         {
-            "idp": "716",
-            "nproceso": "switcheroo-cont",
+            "idp": "596",
+            "nproceso": "google_guest_ag",
             "hijos": []
         },
         {
-            "idp": "717",
-            "nproceso": "systemd-logind",
+            "idp": "640",
+            "nproceso": "polkitd",
             "hijos": []
         },
         {
-            "idp": "718",
-            "nproceso": "systemd-machine",
+            "idp": "688",
+            "nproceso": "agetty",
             "hijos": []
         },
         {
-            "idp": "719",
-            "nproceso": "thermald",
-            "hijos": []
-        },
-        {
-            "idp": "720",
-            "nproceso": "udisksd",
-            "hijos": []
-        },
-        {
-            "idp": "721",
-            "nproceso": "wpa_supplicant",
-            "hijos": []
-        },
-        {
-            "idp": "725",
-            "nproceso": "avahi-daemon",
-            "hijos": []
-        },
-        {
-            "idp": "785",
-            "nproceso": "bluetoothd",
-            "hijos": []
-        },
-        {
-            "idp": "801",
-            "nproceso": "cups-browsed",
-            "hijos": []
-        },
-        {
-            "idp": "826",
-            "nproceso": "ModemManager",
-            "hijos": []
-        },
-        {
-            "idp": "854",
-            "nproceso": "libvirtd",
-            "hijos": []
-        },
-        {
-            "idp": "857",
+            "idp": "691",
             "nproceso": "unattended-upgr",
             "hijos": []
         },
         {
-            "idp": "872",
-            "nproceso": "containerd",
+            "idp": "698",
+            "nproceso": "agetty",
             "hijos": []
         },
         {
-            "idp": "949",
-            "nproceso": "apache2",
+            "idp": "707",
+            "nproceso": "sshd",
             "hijos": [
                 {
-                    "hid": "950",
-                    "hnombre": "apache2"
+                    "hid": "3551",
+                    "hnombre": "sshd"
                 },
                 {
-                    "hid": "951",
-                    "hnombre": "apache2"
+                    "hid": "3998",
+                    "hnombre": "sshd"
                 }
             ]
         },
         {
-            "idp": "950",
-            "nproceso": "apache2",
+            "idp": "739",
+            "nproceso": "systemd-logind",
             "hijos": []
         },
         {
-            "idp": "951",
-            "nproceso": "apache2",
+            "idp": "742",
+            "nproceso": "cron",
             "hijos": []
         },
         {
-            "idp": "1010",
-            "nproceso": "gdm3",
-            "hijos": [
-                {
-                    "hid": "26189",
-                    "hnombre": "gdm-session-wor"
-                }
-            ]
-        },
-        {
-            "idp": "1051",
-            "nproceso": "whoopsie",
-            "hijos": []
-        },
-        {
-            "idp": "1058",
-            "nproceso": "kerneloops",
-            "hijos": []
-        },
-        {
-            "idp": "1060",
-            "nproceso": "kerneloops",
-            "hijos": []
-        },
-        {
-            "idp": "1083",
-            "nproceso": "bpfilter_umh",
-            "hijos": []
-        },
-        {
-            "idp": "1365",
-            "nproceso": "dnsmasq",
-            "hijos": [
-                {
-                    "hid": "1366",
-                    "hnombre": "dnsmasq"
-                }
-            ]
-        },
-        {
-            "idp": "1366",
-            "nproceso": "dnsmasq",
-            "hijos": []
-        },
-        {
-            "idp": "1393",
-            "nproceso": "dockerd",
-            "hijos": []
-        },
-        {
-            "idp": "1408",
-            "nproceso": "rtkit-daemon",
-            "hijos": []
-        },
-        {
-            "idp": "1944",
-            "nproceso": "krfcommd",
-            "hijos": []
-        },
-        {
-            "idp": "1968",
-            "nproceso": "upowerd",
-            "hijos": []
-        },
-        {
-            "idp": "2437",
-            "nproceso": "docker-proxy",
-            "hijos": []
-        },
-        {
-            "idp": "2445",
-            "nproceso": "docker-proxy",
-            "hijos": []
-        },
-        {
-            "idp": "2477",
-            "nproceso": "containerd-shim",
-            "hijos": [
-                {
-                    "hid": "2498",
-                    "hnombre": "mongod"
-                }
-            ]
-        },
-        {
-            "idp": "2498",
-            "nproceso": "mongod",
-            "hijos": []
-        },
-        {
-            "idp": "2916",
-            "nproceso": "colord",
-            "hijos": []
-        },
-        {
-            "idp": "3082",
-            "nproceso": "mount.ntfs",
-            "hijos": []
-        },
-        {
-            "idp": "17906",
-            "nproceso": "rmmod",
-            "hijos": []
-        },
-        {
-            "idp": "24919",
-            "nproceso": "fwupd",
-            "hijos": []
-        },
-        {
-            "idp": "26186",
-            "nproceso": "kworker/u17:0",
-            "hijos": []
-        },
-        {
-            "idp": "26189",
-            "nproceso": "gdm-session-wor",
-            "hijos": [
-                {
-                    "hid": "26295",
-                    "hnombre": "gdm-x-session"
-                }
-            ]
-        },
-        {
-            "idp": "26202",
+            "idp": "2394",
             "nproceso": "systemd",
             "hijos": [
                 {
-                    "hid": "26203",
+                    "hid": "2395",
                     "hnombre": "(sd-pam)"
-                },
-                {
-                    "hid": "26208",
-                    "hnombre": "pulseaudio"
-                },
-                {
-                    "hid": "26210",
-                    "hnombre": "tracker-miner-f"
-                },
-                {
-                    "hid": "26214",
-                    "hnombre": "dbus-daemon"
-                },
-                {
-                    "hid": "26223",
-                    "hnombre": "gvfsd"
-                },
-                {
-                    "hid": "26238",
-                    "hnombre": "gvfsd-fuse"
-                },
-                {
-                    "hid": "26241",
-                    "hnombre": "gvfs-udisks2-vo"
-                },
-                {
-                    "hid": "26253",
-                    "hnombre": "gvfs-afc-volume"
-                },
-                {
-                    "hid": "26259",
-                    "hnombre": "gvfs-gphoto2-vo"
-                },
-                {
-                    "hid": "26264",
-                    "hnombre": "gvfs-mtp-volume"
-                },
-                {
-                    "hid": "26268",
-                    "hnombre": "gvfs-goa-volume"
-                },
-                {
-                    "hid": "26272",
-                    "hnombre": "goa-daemon"
-                },
-                {
-                    "hid": "26279",
-                    "hnombre": "goa-identity-se"
-                },
-                {
-                    "hid": "26394",
-                    "hnombre": "at-spi-bus-laun"
-                },
-                {
-                    "hid": "26406",
-                    "hnombre": "gnome-session-c"
-                },
-                {
-                    "hid": "26413",
-                    "hnombre": "gnome-session-b"
-                },
-                {
-                    "hid": "26427",
-                    "hnombre": "gnome-shell"
-                },
-                {
-                    "hid": "26466",
-                    "hnombre": "ibus-x11"
-                },
-                {
-                    "hid": "26469",
-                    "hnombre": "ibus-portal"
-                },
-                {
-                    "hid": "26482",
-                    "hnombre": "at-spi2-registr"
-                },
-                {
-                    "hid": "26486",
-                    "hnombre": "xdg-permission-"
-                },
-                {
-                    "hid": "26497",
-                    "hnombre": "evolution-sourc"
-                },
-                {
-                    "hid": "26507",
-                    "hnombre": "evolution-calen"
-                },
-                {
-                    "hid": "26488",
-                    "hnombre": "gnome-shell-cal"
-                },
-                {
-                    "hid": "26517",
-                    "hnombre": "dconf-service"
-                },
-                {
-                    "hid": "26523",
-                    "hnombre": "evolution-addre"
-                },
-                {
-                    "hid": "26549",
-                    "hnombre": "gjs"
-                },
-                {
-                    "hid": "26574",
-                    "hnombre": "gsd-a11y-settin"
-                },
-                {
-                    "hid": "26575",
-                    "hnombre": "gsd-color"
-                },
-                {
-                    "hid": "26576",
-                    "hnombre": "gsd-datetime"
-                },
-                {
-                    "hid": "26579",
-                    "hnombre": "gsd-housekeepin"
-                },
-                {
-                    "hid": "26581",
-                    "hnombre": "gsd-keyboard"
-                },
-                {
-                    "hid": "26583",
-                    "hnombre": "gsd-media-keys"
-                },
-                {
-                    "hid": "26585",
-                    "hnombre": "gsd-power"
-                },
-                {
-                    "hid": "26589",
-                    "hnombre": "gsd-print-notif"
-                },
-                {
-                    "hid": "26593",
-                    "hnombre": "gsd-rfkill"
-                },
-                {
-                    "hid": "26594",
-                    "hnombre": "gsd-screensaver"
-                },
-                {
-                    "hid": "26595",
-                    "hnombre": "gsd-sharing"
-                },
-                {
-                    "hid": "26596",
-                    "hnombre": "gsd-smartcard"
-                },
-                {
-                    "hid": "26597",
-                    "hnombre": "gsd-sound"
-                },
-                {
-                    "hid": "26599",
-                    "hnombre": "gsd-usb-protect"
-                },
-                {
-                    "hid": "26601",
-                    "hnombre": "gsd-wacom"
-                },
-                {
-                    "hid": "26603",
-                    "hnombre": "gsd-wwan"
-                },
-                {
-                    "hid": "26604",
-                    "hnombre": "gsd-xsettings"
-                },
-                {
-                    "hid": "26694",
-                    "hnombre": "gsd-printer"
-                },
-                {
-                    "hid": "26724",
-                    "hnombre": "snap-store"
-                },
-                {
-                    "hid": "26760",
-                    "hnombre": "xdg-document-po"
-                },
-                {
-                    "hid": "26843",
-                    "hnombre": "xdg-desktop-por"
-                },
-                {
-                    "hid": "26847",
-                    "hnombre": "xdg-desktop-por"
-                },
-                {
-                    "hid": "27475",
-                    "hnombre": "nautilus"
-                },
-                {
-                    "hid": "27488",
-                    "hnombre": "gvfsd-metadata"
-                },
-                {
-                    "hid": "27535",
-                    "hnombre": "gnome-terminal-"
-                },
-                {
-                    "hid": "27600",
-                    "hnombre": "code"
-                },
-                {
-                    "hid": "27630",
-                    "hnombre": "chrome_crashpad"
-                },
-                {
-                    "hid": "28325",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28334",
-                    "hnombre": "chrome_crashpad"
-                },
-                {
-                    "hid": "28336",
-                    "hnombre": "chrome_crashpad"
-                },
-                {
-                    "hid": "37038",
-                    "hnombre": "sudo"
-                },
-                {
-                    "hid": "42386",
-                    "hnombre": "cpptools-srv"
-                },
-                {
-                    "hid": "44202",
-                    "hnombre": "tracker-store"
                 }
             ]
         },
         {
-            "idp": "26203",
+            "idp": "2395",
             "nproceso": "(sd-pam)",
             "hijos": []
         },
         {
-            "idp": "26208",
-            "nproceso": "pulseaudio",
-            "hijos": []
-        },
-        {
-            "idp": "26210",
-            "nproceso": "tracker-miner-f",
-            "hijos": []
-        },
-        {
-            "idp": "26214",
-            "nproceso": "dbus-daemon",
-            "hijos": []
-        },
-        {
-            "idp": "26216",
-            "nproceso": "gnome-keyring-d",
-            "hijos": []
-        },
-        {
-            "idp": "26223",
-            "nproceso": "gvfsd",
-            "hijos": [
-                {
-                    "hid": "26561",
-                    "hnombre": "gvfsd-trash"
-                },
-                {
-                    "hid": "27513",
-                    "hnombre": "gvfsd-network"
-                },
-                {
-                    "hid": "27528",
-                    "hnombre": "gvfsd-dnssd"
-                }
-            ]
-        },
-        {
-            "idp": "26238",
-            "nproceso": "gvfsd-fuse",
-            "hijos": []
-        },
-        {
-            "idp": "26241",
-            "nproceso": "gvfs-udisks2-vo",
-            "hijos": []
-        },
-        {
-            "idp": "26253",
-            "nproceso": "gvfs-afc-volume",
-            "hijos": []
-        },
-        {
-            "idp": "26259",
-            "nproceso": "gvfs-gphoto2-vo",
-            "hijos": []
-        },
-        {
-            "idp": "26264",
-            "nproceso": "gvfs-mtp-volume",
-            "hijos": []
-        },
-        {
-            "idp": "26268",
-            "nproceso": "gvfs-goa-volume",
-            "hijos": []
-        },
-        {
-            "idp": "26272",
-            "nproceso": "goa-daemon",
-            "hijos": []
-        },
-        {
-            "idp": "26279",
-            "nproceso": "goa-identity-se",
-            "hijos": []
-        },
-        {
-            "idp": "26295",
-            "nproceso": "gdm-x-session",
-            "hijos": [
-                {
-                    "hid": "26297",
-                    "hnombre": "Xorg"
-                },
-                {
-                    "hid": "26308",
-                    "hnombre": "gnome-session-b"
-                }
-            ]
-        },
-        {
-            "idp": "26297",
-            "nproceso": "Xorg",
-            "hijos": []
-        },
-        {
-            "idp": "26308",
-            "nproceso": "gnome-session-b",
-            "hijos": [
-                {
-                    "hid": "26376",
-                    "hnombre": "ssh-agent"
-                }
-            ]
-        },
-        {
-            "idp": "26376",
-            "nproceso": "ssh-agent",
-            "hijos": []
-        },
-        {
-            "idp": "26394",
-            "nproceso": "at-spi-bus-laun",
-            "hijos": [
-                {
-                    "hid": "26399",
-                    "hnombre": "dbus-daemon"
-                }
-            ]
-        },
-        {
-            "idp": "26399",
-            "nproceso": "dbus-daemon",
-            "hijos": []
-        },
-        {
-            "idp": "26406",
-            "nproceso": "gnome-session-c",
-            "hijos": []
-        },
-        {
-            "idp": "26413",
-            "nproceso": "gnome-session-b",
-            "hijos": [
-                {
-                    "hid": "26637",
-                    "hnombre": "gsd-disk-utilit"
-                },
-                {
-                    "hid": "26650",
-                    "hnombre": "evolution-alarm"
-                },
-                {
-                    "hid": "27430",
-                    "hnombre": "variety"
-                },
-                {
-                    "hid": "28768",
-                    "hnombre": "update-notifier"
-                }
-            ]
-        },
-        {
-            "idp": "26427",
-            "nproceso": "gnome-shell",
-            "hijos": [
-                {
-                    "hid": "26459",
-                    "hnombre": "ibus-daemon"
-                },
-                {
-                    "hid": "40572",
-                    "hnombre": "Discord"
-                }
-            ]
-        },
-        {
-            "idp": "26459",
-            "nproceso": "ibus-daemon",
-            "hijos": [
-                {
-                    "hid": "26463",
-                    "hnombre": "ibus-dconf"
-                },
-                {
-                    "hid": "26464",
-                    "hnombre": "ibus-extension-"
-                },
-                {
-                    "hid": "26648",
-                    "hnombre": "ibus-engine-sim"
-                }
-            ]
-        },
-        {
-            "idp": "26463",
-            "nproceso": "ibus-dconf",
-            "hijos": []
-        },
-        {
-            "idp": "26464",
-            "nproceso": "ibus-extension-",
-            "hijos": []
-        },
-        {
-            "idp": "26466",
-            "nproceso": "ibus-x11",
-            "hijos": []
-        },
-        {
-            "idp": "26469",
-            "nproceso": "ibus-portal",
-            "hijos": []
-        },
-        {
-            "idp": "26482",
-            "nproceso": "at-spi2-registr",
-            "hijos": []
-        },
-        {
-            "idp": "26486",
-            "nproceso": "xdg-permission-",
-            "hijos": []
-        },
-        {
-            "idp": "26488",
-            "nproceso": "gnome-shell-cal",
-            "hijos": []
-        },
-        {
-            "idp": "26497",
-            "nproceso": "evolution-sourc",
-            "hijos": []
-        },
-        {
-            "idp": "26507",
-            "nproceso": "evolution-calen",
-            "hijos": []
-        },
-        {
-            "idp": "26517",
-            "nproceso": "dconf-service",
-            "hijos": []
-        },
-        {
-            "idp": "26523",
-            "nproceso": "evolution-addre",
-            "hijos": []
-        },
-        {
-            "idp": "26549",
-            "nproceso": "gjs",
-            "hijos": []
-        },
-        {
-            "idp": "26561",
-            "nproceso": "gvfsd-trash",
-            "hijos": []
-        },
-        {
-            "idp": "26574",
-            "nproceso": "gsd-a11y-settin",
-            "hijos": []
-        },
-        {
-            "idp": "26575",
-            "nproceso": "gsd-color",
-            "hijos": []
-        },
-        {
-            "idp": "26576",
-            "nproceso": "gsd-datetime",
-            "hijos": []
-        },
-        {
-            "idp": "26579",
-            "nproceso": "gsd-housekeepin",
-            "hijos": []
-        },
-        {
-            "idp": "26581",
-            "nproceso": "gsd-keyboard",
-            "hijos": []
-        },
-        {
-            "idp": "26583",
-            "nproceso": "gsd-media-keys",
-            "hijos": []
-        },
-        {
-            "idp": "26585",
-            "nproceso": "gsd-power",
-            "hijos": []
-        },
-        {
-            "idp": "26589",
-            "nproceso": "gsd-print-notif",
-            "hijos": []
-        },
-        {
-            "idp": "26593",
-            "nproceso": "gsd-rfkill",
-            "hijos": []
-        },
-        {
-            "idp": "26594",
-            "nproceso": "gsd-screensaver",
-            "hijos": []
-        },
-        {
-            "idp": "26595",
-            "nproceso": "gsd-sharing",
-            "hijos": []
-        },
-        {
-            "idp": "26596",
-            "nproceso": "gsd-smartcard",
-            "hijos": []
-        },
-        {
-            "idp": "26597",
-            "nproceso": "gsd-sound",
-            "hijos": []
-        },
-        {
-            "idp": "26599",
-            "nproceso": "gsd-usb-protect",
-            "hijos": []
-        },
-        {
-            "idp": "26601",
-            "nproceso": "gsd-wacom",
-            "hijos": []
-        },
-        {
-            "idp": "26603",
-            "nproceso": "gsd-wwan",
-            "hijos": []
-        },
-        {
-            "idp": "26604",
-            "nproceso": "gsd-xsettings",
-            "hijos": []
-        },
-        {
-            "idp": "26637",
-            "nproceso": "gsd-disk-utilit",
-            "hijos": []
-        },
-        {
-            "idp": "26648",
-            "nproceso": "ibus-engine-sim",
-            "hijos": []
-        },
-        {
-            "idp": "26650",
-            "nproceso": "evolution-alarm",
-            "hijos": []
-        },
-        {
-            "idp": "26694",
-            "nproceso": "gsd-printer",
-            "hijos": []
-        },
-        {
-            "idp": "26724",
-            "nproceso": "snap-store",
-            "hijos": []
-        },
-        {
-            "idp": "26760",
-            "nproceso": "xdg-document-po",
-            "hijos": []
-        },
-        {
-            "idp": "26843",
-            "nproceso": "xdg-desktop-por",
-            "hijos": []
-        },
-        {
-            "idp": "26847",
-            "nproceso": "xdg-desktop-por",
-            "hijos": []
-        },
-        {
-            "idp": "27430",
-            "nproceso": "variety",
-            "hijos": []
-        },
-        {
-            "idp": "27475",
-            "nproceso": "nautilus",
-            "hijos": []
-        },
-        {
-            "idp": "27488",
-            "nproceso": "gvfsd-metadata",
-            "hijos": []
-        },
-        {
-            "idp": "27513",
-            "nproceso": "gvfsd-network",
-            "hijos": []
-        },
-        {
-            "idp": "27528",
-            "nproceso": "gvfsd-dnssd",
-            "hijos": []
-        },
-        {
-            "idp": "27535",
-            "nproceso": "gnome-terminal-",
-            "hijos": [
-                {
-                    "hid": "27542",
-                    "hnombre": "bash"
-                }
-            ]
-        },
-        {
-            "idp": "27542",
-            "nproceso": "bash",
-            "hijos": [
-                {
-                    "hid": "44272",
-                    "hnombre": "cat"
-                }
-            ]
-        },
-        {
-            "idp": "27600",
-            "nproceso": "code",
-            "hijos": [
-                {
-                    "hid": "27602",
-                    "hnombre": "code"
-                },
-                {
-                    "hid": "27603",
-                    "hnombre": "code"
-                },
-                {
-                    "hid": "27760",
-                    "hnombre": "code"
-                }
-            ]
-        },
-        {
-            "idp": "27602",
-            "nproceso": "code",
-            "hijos": [
-                {
-                    "hid": "27688",
-                    "hnombre": "code"
-                }
-            ]
-        },
-        {
-            "idp": "27603",
-            "nproceso": "code",
-            "hijos": []
-        },
-        {
-            "idp": "27630",
-            "nproceso": "chrome_crashpad",
-            "hijos": []
-        },
-        {
-            "idp": "27671",
-            "nproceso": "code",
-            "hijos": []
-        },
-        {
-            "idp": "27688",
-            "nproceso": "code",
-            "hijos": []
-        },
-        {
-            "idp": "27719",
-            "nproceso": "code",
-            "hijos": []
-        },
-        {
-            "idp": "27743",
-            "nproceso": "code",
-            "hijos": [
-                {
-                    "hid": "27761",
-                    "hnombre": "code"
-                }
-            ]
-        },
-        {
-            "idp": "27760",
-            "nproceso": "code",
-            "hijos": [
-                {
-                    "hid": "27852",
-                    "hnombre": "TabNine"
-                },
-                {
-                    "hid": "28183",
-                    "hnombre": "code"
-                },
-                {
-                    "hid": "28213",
-                    "hnombre": "cpptools"
-                }
-            ]
-        },
-        {
-            "idp": "27761",
-            "nproceso": "code",
-            "hijos": [
-                {
-                    "hid": "28048",
-                    "hnombre": "bash"
-                },
-                {
-                    "hid": "28065",
-                    "hnombre": "bash"
-                },
-                {
-                    "hid": "28087",
-                    "hnombre": "bash"
-                },
-                {
-                    "hid": "28116",
-                    "hnombre": "bash"
-                },
-                {
-                    "hid": "37058",
-                    "hnombre": "bash"
-                }
-            ]
-        },
-        {
-            "idp": "27798",
-            "nproceso": "code",
-            "hijos": []
-        },
-        {
-            "idp": "27852",
-            "nproceso": "TabNine",
-            "hijos": [
-                {
-                    "hid": "27881",
-                    "hnombre": "WD-TabNine"
-                }
-            ]
-        },
-        {
-            "idp": "27881",
-            "nproceso": "WD-TabNine",
-            "hijos": []
-        },
-        {
-            "idp": "27919",
-            "nproceso": "TabNine",
-            "hijos": [
-                {
-                    "hid": "27986",
-                    "hnombre": "TabNine-deep-lo"
-                }
-            ]
-        },
-        {
-            "idp": "27986",
-            "nproceso": "TabNine-deep-lo",
-            "hijos": []
-        },
-        {
-            "idp": "28048",
-            "nproceso": "bash",
-            "hijos": []
-        },
-        {
-            "idp": "28065",
-            "nproceso": "bash",
-            "hijos": []
-        },
-        {
-            "idp": "28087",
-            "nproceso": "bash",
-            "hijos": []
-        },
-        {
-            "idp": "28116",
-            "nproceso": "bash",
-            "hijos": []
-        },
-        {
-            "idp": "28183",
-            "nproceso": "code",
-            "hijos": []
-        },
-        {
-            "idp": "28213",
-            "nproceso": "cpptools",
-            "hijos": []
-        },
-        {
-            "idp": "28325",
-            "nproceso": "chrome",
-            "hijos": [
-                {
-                    "hid": "28331",
-                    "hnombre": "cat"
-                },
-                {
-                    "hid": "28332",
-                    "hnombre": "cat"
-                },
-                {
-                    "hid": "28342",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28343",
-                    "hnombre": "chrome"
-                }
-            ]
-        },
-        {
-            "idp": "28331",
-            "nproceso": "cat",
-            "hijos": []
-        },
-        {
-            "idp": "28332",
-            "nproceso": "cat",
-            "hijos": []
-        },
-        {
-            "idp": "28334",
-            "nproceso": "chrome_crashpad",
-            "hijos": []
-        },
-        {
-            "idp": "28336",
-            "nproceso": "chrome_crashpad",
-            "hijos": []
-        },
-        {
-            "idp": "28342",
-            "nproceso": "chrome",
-            "hijos": [
-                {
-                    "hid": "28379",
-                    "hnombre": "chrome"
-                }
-            ]
-        },
-        {
-            "idp": "28343",
-            "nproceso": "chrome",
-            "hijos": [
-                {
-                    "hid": "28344",
-                    "hnombre": "nacl_helper"
-                },
-                {
-                    "hid": "28347",
-                    "hnombre": "chrome"
-                }
-            ]
-        },
-        {
-            "idp": "28344",
-            "nproceso": "nacl_helper",
-            "hijos": []
-        },
-        {
-            "idp": "28347",
-            "nproceso": "chrome",
-            "hijos": [
-                {
-                    "hid": "28401",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28475",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28510",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28526",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28533",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28553",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28567",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28593",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "28755",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "29002",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "29015",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "29334",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "34306",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "34342",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "34359",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "34372",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "38650",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "39091",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "39112",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "39193",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "40002",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "40015",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "40421",
-                    "hnombre": "chrome"
-                },
-                {
-                    "hid": "41199",
-                    "hnombre": "chrome"
-                }
-            ]
-        },
-        {
-            "idp": "28379",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28380",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28401",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28475",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28510",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28526",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28533",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28553",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28567",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28593",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28651",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28755",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "28768",
-            "nproceso": "update-notifier",
-            "hijos": []
-        },
-        {
-            "idp": "29002",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "29015",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "29334",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "34306",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "34342",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "34359",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "34372",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "35452",
-            "nproceso": "kworker/u16:1",
-            "hijos": []
-        },
-        {
-            "idp": "37038",
-            "nproceso": "sudo",
-            "hijos": [
-                {
-                    "hid": "37039",
-                    "hnombre": "insmod"
-                }
-            ]
-        },
-        {
-            "idp": "37039",
-            "nproceso": "insmod",
-            "hijos": []
-        },
-        {
-            "idp": "37058",
-            "nproceso": "bash",
-            "hijos": []
-        },
-        {
-            "idp": "38650",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "39091",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "39112",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "39193",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "39329",
-            "nproceso": "kworker/u16:2",
-            "hijos": []
-        },
-        {
-            "idp": "40002",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "40015",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "40421",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "40572",
-            "nproceso": "Discord",
-            "hijos": [
-                {
-                    "hid": "40577",
-                    "hnombre": "Discord"
-                },
-                {
-                    "hid": "40578",
-                    "hnombre": "Discord"
-                }
-            ]
-        },
-        {
-            "idp": "40577",
-            "nproceso": "Discord",
-            "hijos": [
-                {
-                    "hid": "40607",
-                    "hnombre": "Discord"
-                }
-            ]
-        },
-        {
-            "idp": "40578",
-            "nproceso": "Discord",
-            "hijos": [
-                {
-                    "hid": "40580",
-                    "hnombre": "Discord"
-                }
-            ]
-        },
-        {
-            "idp": "40580",
-            "nproceso": "Discord",
-            "hijos": []
-        },
-        {
-            "idp": "40607",
-            "nproceso": "Discord",
-            "hijos": []
-        },
-        {
-            "idp": "40615",
-            "nproceso": "Discord",
-            "hijos": []
-        },
-        {
-            "idp": "40658",
-            "nproceso": "Discord",
-            "hijos": []
-        },
-        {
-            "idp": "40694",
-            "nproceso": "Discord",
-            "hijos": []
-        },
-        {
-            "idp": "41132",
-            "nproceso": "kworker/5:2",
-            "hijos": []
-        },
-        {
-            "idp": "41199",
-            "nproceso": "chrome",
-            "hijos": []
-        },
-        {
-            "idp": "41933",
-            "nproceso": "kworker/0:0",
-            "hijos": []
-        },
-        {
-            "idp": "41973",
+            "idp": "3126",
             "nproceso": "kworker/1:0",
             "hijos": []
         },
         {
-            "idp": "42177",
-            "nproceso": "kworker/u16:3",
+            "idp": "3148",
+            "nproceso": "kworker/u4:1",
             "hijos": []
         },
         {
-            "idp": "42274",
-            "nproceso": "kworker/6:0",
-            "hijos": []
-        },
-        {
-            "idp": "42275",
-            "nproceso": "kworker/7:1",
-            "hijos": []
-        },
-        {
-            "idp": "42310",
-            "nproceso": "kworker/2:2",
-            "hijos": []
-        },
-        {
-            "idp": "42386",
-            "nproceso": "cpptools-srv",
-            "hijos": []
-        },
-        {
-            "idp": "42421",
-            "nproceso": "kworker/4:0",
-            "hijos": []
-        },
-        {
-            "idp": "42525",
-            "nproceso": "kworker/3:0",
-            "hijos": []
-        },
-        {
-            "idp": "43054",
-            "nproceso": "kworker/6:2",
-            "hijos": []
-        },
-        {
-            "idp": "43057",
-            "nproceso": "kworker/7:0",
-            "hijos": []
-        },
-        {
-            "idp": "43168",
+            "idp": "3207",
             "nproceso": "kworker/1:1",
             "hijos": []
         },
         {
-            "idp": "43179",
-            "nproceso": "kworker/2:1",
-            "hijos": []
-        },
-        {
-            "idp": "43184",
-            "nproceso": "kworker/0:2",
-            "hijos": []
-        },
-        {
-            "idp": "43186",
-            "nproceso": "kworker/5:0",
-            "hijos": []
-        },
-        {
-            "idp": "43275",
-            "nproceso": "kworker/u17:2",
-            "hijos": []
-        },
-        {
-            "idp": "43277",
-            "nproceso": "kworker/4:2",
-            "hijos": []
-        },
-        {
-            "idp": "43343",
-            "nproceso": "kworker/3:2",
-            "hijos": []
-        },
-        {
-            "idp": "43549",
-            "nproceso": "kworker/6:1",
-            "hijos": []
-        },
-        {
-            "idp": "43564",
-            "nproceso": "kworker/7:2",
-            "hijos": []
-        },
-        {
-            "idp": "43574",
-            "nproceso": "kworker/1:2",
-            "hijos": []
-        },
-        {
-            "idp": "43586",
-            "nproceso": "kworker/5:1",
-            "hijos": []
-        },
-        {
-            "idp": "43588",
+            "idp": "3526",
             "nproceso": "kworker/0:1",
             "hijos": []
         },
         {
-            "idp": "43603",
-            "nproceso": "kworker/2:0",
+            "idp": "3551",
+            "nproceso": "sshd",
+            "hijos": [
+                {
+                    "hid": "3652",
+                    "hnombre": "sshd"
+                }
+            ]
+        },
+        {
+            "idp": "3652",
+            "nproceso": "sshd",
+            "hijos": [
+                {
+                    "hid": "3653",
+                    "hnombre": "bash"
+                }
+            ]
+        },
+        {
+            "idp": "3653",
+            "nproceso": "bash",
+            "hijos": [
+                {
+                    "hid": "7087",
+                    "hnombre": "go"
+                }
+            ]
+        },
+        {
+            "idp": "3690",
+            "nproceso": "kworker/u4:0",
             "hijos": []
         },
         {
-            "idp": "43670",
-            "nproceso": "kworker/u17:3",
+            "idp": "3998",
+            "nproceso": "sshd",
+            "hijos": [
+                {
+                    "hid": "4073",
+                    "hnombre": "sshd"
+                }
+            ]
+        },
+        {
+            "idp": "4073",
+            "nproceso": "sshd",
+            "hijos": [
+                {
+                    "hid": "4074",
+                    "hnombre": "bash"
+                }
+            ]
+        },
+        {
+            "idp": "4074",
+            "nproceso": "bash",
             "hijos": []
         },
         {
-            "idp": "44166",
-            "nproceso": "kworker/u16:0",
+            "idp": "6128",
+            "nproceso": "kworker/0:2",
             "hijos": []
         },
         {
-            "idp": "44192",
-            "nproceso": "kworker/4:1",
+            "idp": "6758",
+            "nproceso": "kworker/u4:2",
             "hijos": []
         },
         {
-            "idp": "44202",
-            "nproceso": "tracker-store",
+            "idp": "7081",
+            "nproceso": "kworker/1:2",
             "hijos": []
         },
         {
-            "idp": "44230",
-            "nproceso": "kworker/3:1",
+            "idp": "7087",
+            "nproceso": "go",
             "hijos": []
         },
         {
-            "idp": "44272",
+            "idp": "7131",
+            "nproceso": "main",
+            "hijos": []
+        },
+        {
+            "idp": "7139",
+            "nproceso": "sh",
+            "hijos": [
+                {
+                    "hid": "7140",
+                    "hnombre": "cat"
+                }
+            ]
+        },
+        {
+            "idp": "7140",
             "nproceso": "cat",
             "hijos": []
         }

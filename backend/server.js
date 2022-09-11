@@ -1,10 +1,16 @@
 var express = require('express');
-var app = express();
+const cors = require('cors');
+require('dotenv').config()
 
-app.get('/', function(req, res){
-    res.send('Hola mundo');
-})
+
+
+var app = express();
+app.use(cors());
+
+app.use('/sistema', require('./routes/index.js'));
+
+
 
 app.listen(4000, function() {
-    console.log('Aplicación escuchando en el puerto 4000!');
+    console.log('Aplicación escuchando en el puerto 4000');
   });
