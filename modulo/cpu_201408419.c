@@ -40,13 +40,14 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
         //seq_printf(archivo, " --------> ");
         seq_printf(archivo, "\"nproceso\":\"%s\",\n", cpu->comm);
         seq_printf(archivo, "\"hijos\":[\n");
+        aux2=true;
         list_for_each(listProcesos, &(cpu->children)){
             hijos = list_entry(listProcesos, struct task_struct, sibling);
-            if(aux2 == false){
-                seq_printf(archivo, "\n");
+            if(aux2){
+                seq_printf(archivo, "\n{\n");
                 aux2 = false;
             }else{
-                seq_printf(archivo, ",\n");
+                seq_printf(archivo, ",\n{\n");
             }           
             //seq_printf(archivo, "   ");
             seq_printf(archivo, "\"hid\":\"%d\",\n", hijos->pid);
@@ -54,6 +55,7 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
             seq_printf(archivo, "\"hnombre\":\"%s\"\n", hijos->comm);
             seq_printf(archivo, "}");
         }
+        seq_printf(archivo, "]\n");
         seq_printf(archivo, "}\n");
     }
     seq_printf(archivo, "]\n}");

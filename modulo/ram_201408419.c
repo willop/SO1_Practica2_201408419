@@ -75,7 +75,7 @@ static struct proc_ops operaciones =
 static int _insert(void)
 {
     proc_create("ram_201408419", 0, NULL, &operaciones);
-    printk(KERN_INFO "Cargando modulo, 201408419\n");
+    printk(KERN_INFO "201408419\n");
     return 0;
 }
 //Funcion a ejecuta al remover el modulo del kernel con rmmod
