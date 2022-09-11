@@ -1,1 +1,0 @@
-cmd_/home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.mod := { echo  /home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.o;  echo; } > /home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.mod
