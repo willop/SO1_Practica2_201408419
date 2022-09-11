@@ -1,33 +1,31 @@
-#include <linux/module.h>
-// para usar KERN_INFO
-#include <linux/kernel.h>
+#include <linux/module.h>	/* Nesesario para todos los modulos */
+#include <linux/kernel.h>	/* Nesesario para informacion del kernel */
 
-//Header para los macros module_init y module_exit
-#include <linux/init.h>
-//Header necesario porque se usara proc_fs
+#include <linux/init.h>		/* Nesesario para macros */
 #include <linux/proc_fs.h>
-/* for copy_from_user */
 #include <asm/uaccess.h>
-/* Header para usar la lib seq_file y manejar el archivo en /proc*/
 #include <linux/seq_file.h>
+#include <linux/hugetlb.h>
 
-#include<linux/sched.h>
+#include <linux/sched.h>
 #include <linux/mm.h>
 #include <linux/cred.h>
-//#include<linux/sched/signal.h>
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Creacion de modulo, Laboratorio Sistemas Operativos 1");
 MODULE_AUTHOR("Wilfred Stewart Perez Solorzano");
 
-struct task_struct * cpu;
-struct task_struct * hijos;
-struct list_head * listProcesos;
+//struct task_struct * cpu;
+//struct task_struct * hijos;
+//struct list_head * listProcesos;
+
+struct task_struct *proceso, *hijo;
+struct list_head *hijos;
 
 //Funcion que se ejecutara que se lea el archivo con el comando CAT
 static int escribir_archivo(struct seq_file *archivo, void *v)
 {    
-    //unsigned long rss;
+    /*unsigned long rss;
 
     bool aux = true;
     bool aux2 = true;
@@ -66,7 +64,36 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
         seq_printf(archivo, "]\n");
         seq_printf(archivo, "}\n");
     }
-    seq_printf(archivo, "]\n}");
+    seq_printf(archivo, "]\n}");*/
+
+    unsigned long rss;
+
+	seq_printf(archivo, "[ { \"Nombre\": \"\", \"PID\": -1, \"Estado\": \"-1\", \"RAM\": -1, \"UID\": -1, \"Usuario\": \"\", \"SubProcesos\": [] }");
+
+	for_each_process(proceso){
+		if (proceso->mm) {
+			rss = get_mm_rss(proceso->mm) << PAGE_SHIFT;
+			seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": %lu, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": ", proceso->comm, proceso->pid, proceso->__state, rss, __kuid_val(proceso->cred->uid));
+		} else {
+			seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": 0, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": ", proceso->comm, proceso->pid, proceso->__state, __kuid_val(proceso->cred->uid));
+		}
+
+		seq_printf(archivo, "[ { \"Nombre\": \"\", \"PID\": -1, \"Estado\": \"-1\", \"RAM\": -1, \"UID\": -1, \"Usuario\": \"\", \"SubProcesos\": [] }");
+
+		list_for_each(hijos, &(proceso->children)){
+			hijo = list_entry(hijos, struct task_struct, sibling);
+
+			if (hijo->mm) {
+				rss = get_mm_rss(hijo->mm) << PAGE_SHIFT;
+				seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": %lu, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": [] }", hijo->comm, hijo->pid, hijo->__state, rss, __kuid_val(hijo->cred->uid));
+			} else {
+				seq_printf(archivo, ", { \"Nombre\": \"%s\", \"PID\": %d, \"Estado\": \"%d\", \"RAM\": 0, \"UID\": %d, \"Usuario\": \"\", \"SubProcesos\": [] }", hijo->comm, hijo->pid, hijo->__state, __kuid_val(hijo->cred->uid));
+			}
+		}
+
+		seq_printf(archivo, "]}");
+	}
+	seq_printf(archivo, "]");
     return 0;
 }
 

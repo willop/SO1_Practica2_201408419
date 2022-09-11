@@ -1,0 +1,1 @@
+cmd_/home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.ko /home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.o /home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.mod.o;  true

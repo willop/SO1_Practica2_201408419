@@ -1,0 +1,1 @@
+cmd_/home/willop/Escritorio/Practica2Sopes/modulo/modules.order := {   echo /home/willop/Escritorio/Practica2Sopes/modulo/ram_201408419.ko;   echo /home/willop/Escritorio/Practica2Sopes/modulo/cpu_201408419.ko; :; } | awk '!x[$$0]++' - > /home/willop/Escritorio/Practica2Sopes/modulo/modules.order
