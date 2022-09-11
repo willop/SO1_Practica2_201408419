@@ -28,14 +28,14 @@ func MySQLConn() *sql.DB {
 	return conn
 }
 
-func getModuloCPU() string {
+func getModuloRAM() string {
 	cmd := exec.Command("sh", "-c", "cat /proc/ram_201408419")
 	salida, err := cmd.CombinedOutput()
 	if err != nil {
 		fmt.Println(err)
 	}
 	json := string(salida[:])
-	fmt.Println("**********************\nJson obtenido del proc\n*********************\n")
+	//fmt.Println("**********************\nJson obtenido del proc\n*********************\n")
 	fmt.Println(json)
 	return json
 
@@ -45,7 +45,7 @@ func inserCPU(response http.ResponseWriter, request *http.Request) {
 	response.Header().Add("content-type", "application/json")
 	//json.NewDecoder((request.Body)).Decode(&usr)
 	query := `INSERT INTO CPU(informacion) VALUES (?);`
-	result, err := conn.Exec(query, getModuloCPU())
+	result, err := conn.Exec(query, getModuloRAM())
 	if err != nil {
 		fmt.Println("Error en insert CPU")
 		fmt.Println(err)
@@ -56,19 +56,17 @@ func inserCPU(response http.ResponseWriter, request *http.Request) {
 }
 
 func main() {
-	fmt.Println("Dentro del server de go\nLeyendo modulo cpu\n")
-	var version string
+	fmt.Println("Dentro del server de go\nLeyendo modulo RAM\n")
 
-	err2 := MySQLConn().QueryRow("INSERT INTO CPU(informacion) VALUES (?);", getModuloCPU()).Scan(&version)
-	fmt.Println("*********\nQUEry*******\n")
-	fmt.Println("INSERT INTO CPU(informacion) VALUES (?);", getModuloCPU())
-	fmt.Println("*********\nEnd QUERY*******\n")
-	if err2 != nil {
-		fmt.Println(err2)
-		fmt.Println("ERROR en CPU")
+	query := `INSERT INTO RAM(informacion) VALUES (?);`
+	result, err := conn.Exec(query, getModuloRAM())
+
+	if err != nil {
+		fmt.Println("Error en insert RAM")
+		fmt.Println(err)
 	}
-	fmt.Println(version)
-
+	fmt.Println("Resultado mysql")
+	fmt.Println(result)
 	/*router := mux.NewRouter()
 	err := http.ListenAndServe(":8000", router)
 	if err != nil {
