@@ -42,10 +42,7 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
     multiplicacion = resta * 100;
 
     usoram = multiplicacion/totalram;
-
-    seq_printf(archivo, "inicio");
-    seq_printf(archivo, "\"RAM\": %ld| \"FREE\": %ld | \"USADA\": %ld %%", totalram,freeram,usoram);
-    seq_printf(archivo, "fin");
+    seq_printf(archivo, "{\n\"RAM\": %ld,\n \"FREE\": %ld ,\n \"USADA\": %ld %% \n}", totalram,freeram,usoram);
     /*seq_printf(archivo, "{\"data\":\"");
     seq_printf(archivo, "*************************************\n");
     seq_printf(archivo, "*************************************\n");
