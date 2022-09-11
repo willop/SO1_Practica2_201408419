@@ -58,7 +58,11 @@ func inserCPU(response http.ResponseWriter, request *http.Request) {
 func main() {
 	fmt.Println("Dentro del server de go\nLeyendo modulo cpu\n")
 	var version string
-	err2 := MySQLConn().QueryRow("INSERT INTO CPU(informacion) VALUES (" + getModuloCPU() + ");").Scan(&version)
+
+	err2 := MySQLConn().QueryRow("INSERT INTO CPU(informacion) VALUES (?);", getModuloCPU()).Scan(&version)
+	fmt.Println("*********\nQUEry*******\n")
+	fmt.Println("INSERT INTO CPU(informacion) VALUES (?);", getModuloCPU())
+	fmt.Println("*********\nEnd QUERY*******\n")
 	if err2 != nil {
 		fmt.Println(err2)
 		fmt.Println("ERROR en CPU")
