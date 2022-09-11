@@ -67,7 +67,7 @@ func main() {
 		fmt.Println("Resultado mysql RAM")
 		fmt.Println(result)
 
-		query = `INSERT INTO RAM(informacion) VALUES (?);`
+		query = `INSERT INTO CPU(informacion) VALUES (?);`
 		result, err = conn.Exec(query, getModuloCPU())
 
 		if err != nil {
