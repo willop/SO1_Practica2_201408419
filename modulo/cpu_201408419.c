@@ -12,7 +12,9 @@
 #include <linux/seq_file.h>
 
 #include<linux/sched.h>
-#include<linux/sched/signal.h>
+#include <linux/mm.h>
+#include <linux/cred.h>
+//#include<linux/sched/signal.h>
 
 MODULE_LICENSE("GPL");
 MODULE_DESCRIPTION("Creacion de modulo, Laboratorio Sistemas Operativos 1");
@@ -25,6 +27,8 @@ struct list_head * listProcesos;
 //Funcion que se ejecutara que se lea el archivo con el comando CAT
 static int escribir_archivo(struct seq_file *archivo, void *v)
 {    
+    //unsigned long rss;
+
     bool aux = true;
     bool aux2 = true;
     seq_printf(archivo, "{\n\"Procesos\":[\n");
@@ -35,10 +39,13 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
         }else{
             seq_printf(archivo, ",\n");
         }
+        //rss = get_mm_rss(cpu->mm) << PAGE_SHIFT;
         seq_printf(archivo, "{\n");
-        seq_printf(archivo, "\"idp\":\"%d\",\n", cpu->pid);
-        //seq_printf(archivo, " --------> ");
-        seq_printf(archivo, "\"nproceso\":\"%s\",\n", cpu->comm);
+        seq_printf(archivo, "\"idp\":\"%d\",\n", cpu->pid);                                 //para id
+        seq_printf(archivo, "\"nproceso\":\"%s\",\n", cpu->comm);                           //para nombre
+        //seq_printf(archivo, "\"statep\":\"%d\",\n", cpu->__state);                            //para estado
+        //seq_printf(archivo, "\"ramp\":\"%lu\",\n", rss);                                     //para ram
+        //seq_printf(archivo, "\"userp\":\"%d\",\n", __kuid_val(cpu->cred->uid));           //para Usuario
         seq_printf(archivo, "\"hijos\":[\n");
         aux2=true;
         list_for_each(listProcesos, &(cpu->children)){
@@ -51,6 +58,7 @@ static int escribir_archivo(struct seq_file *archivo, void *v)
             }           
             //seq_printf(archivo, "   ");
             seq_printf(archivo, "\"hid\":\"%d\",\n", hijos->pid);
+            //seq_printf(archivo, "\"hid\":\"%d\",\n", );
             //seq_printf(archivo, " --------> ");
             seq_printf(archivo, "\"hnombre\":\"%s\"\n", hijos->comm);
             seq_printf(archivo, "}");
