@@ -19,9 +19,6 @@ struct task_struct * cpu;
 struct task_struct * hijos;
 struct list_head * listProcesos;
 
-struct task_struct *proceso, *hijo;
-struct list_head *hijos;
-
 //Funcion que se ejecutara que se lea el archivo con el comando CAT
 static int escribir_archivo(struct seq_file *archivo, void *v)
 {    
