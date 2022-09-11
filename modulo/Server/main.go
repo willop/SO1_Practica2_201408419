@@ -2,10 +2,9 @@ package main
 
 import (
 	"database/sql"
-	"encoding/json"
 	"fmt"
-	"net/http"
 	"os/exec"
+	"time"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -36,63 +35,49 @@ func getModuloRAM() string {
 	}
 	json := string(salida[:])
 	//fmt.Println("**********************\nJson obtenido del proc\n*********************\n")
-	fmt.Println(json)
+	//fmt.Println(json)
 	return json
 
 }
 
-func inserCPU(response http.ResponseWriter, request *http.Request) {
-	response.Header().Add("content-type", "application/json")
-	//json.NewDecoder((request.Body)).Decode(&usr)
-	query := `INSERT INTO CPU(informacion) VALUES (?);`
-	result, err := conn.Exec(query, getModuloRAM())
+func getModuloCPU() string {
+	cmd := exec.Command("sh", "-c", "cat /proc/cpu_201408419")
+	salida, err := cmd.CombinedOutput()
 	if err != nil {
-		fmt.Println("Error en insert CPU")
 		fmt.Println(err)
 	}
-	fmt.Println(json.NewEncoder(response).Encode(result))
-	json.NewEncoder(response).Encode(result)
+	json := string(salida[:])
+	//fmt.Println("**********************\nJson obtenido del proc\n*********************\n")
+	//fmt.Println(json)
+	return json
 
 }
 
 func main() {
 	fmt.Println("Dentro del server de go\nLeyendo modulo RAM\n")
 
-	query := `INSERT INTO RAM(informacion) VALUES (?);`
-	result, err := conn.Exec(query, getModuloRAM())
+	for true {
+		query := `INSERT INTO RAM(informacion) VALUES (?);`
+		result, err := conn.Exec(query, getModuloRAM())
 
-	if err != nil {
-		fmt.Println("Error en insert RAM")
-		fmt.Println(err)
+		if err != nil {
+			fmt.Println("Error en insert RAM")
+			fmt.Println(err)
+		}
+		fmt.Println("Resultado mysql RAM")
+		fmt.Println(result)
+
+		query = `INSERT INTO RAM(informacion) VALUES (?);`
+		result, err = conn.Exec(query, getModuloCPU())
+
+		if err != nil {
+			fmt.Println("Error en insert CPU")
+			fmt.Println(err)
+		}
+		fmt.Println("Resultado mysql CPU")
+		fmt.Println(result)
+
+		time.Sleep(5 * time.Second)
 	}
-	fmt.Println("Resultado mysql")
-	fmt.Println(result)
-	/*router := mux.NewRouter()
-	err := http.ListenAndServe(":8000", router)
-	if err != nil {
-		fmt.Println(err)
-	}*/
-	/*
-		for true {
-			cmd := exec.Command("sh", "-c", "cat /proc/ram_201408419")
-			salida, err := cmd.CombinedOutput()
-			if err != nil {
-				fmt.Println(err)
-			}
-			json := string(salida[:])
-			fmt.Println("**********************\nJson obtenido del proc\n*********************\n")
-			fmt.Println(json)
-
-			cmd = exec.Command("sh", "-c", "cat /proc/cpu_201408419")
-			salida, err = cmd.CombinedOutput()
-			if err != nil {
-				fmt.Println(err)
-			}
-			json = string(salida[:])
-			fmt.Println("**********************\nJson obtenido del proc\n*********************\n")
-			fmt.Println(json)
-
-			time.Sleep(10 * time.Second)
-		}*/
 
 }
