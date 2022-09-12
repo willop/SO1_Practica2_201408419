@@ -27,7 +27,8 @@ function App() {
           'Content-Type': 'application/json'
         }
       }
-      let respuesta = await fetch('http://localhost:4000/sistema/ram', configuracion)
+      const conexionback1 = 'http://localhost:4000' || process.env.HOST
+      let respuesta = await fetch(conexionback1+"/sistema/ram" , configuracion)
       let json = await respuesta.json();
       //.log('valor de la respuesta json')
       //.log(json)
@@ -52,7 +53,8 @@ function App() {
           'Content-Type': 'application/json'
         }
       }
-      let respuesta = await fetch('http://localhost:4000/sistema/cpu', configuracion)
+      const conexionback1 = 'http://localhost:4000' || process.env.HOST
+      let respuesta = await fetch(conexionback1+"/sistema/cpu" , configuracion)
       let json = await respuesta.json();
       //.log('valor de la respuesta json')
       //.log(json)
@@ -66,11 +68,9 @@ function App() {
     }
   }
 
-
-
   useEffect(function () {
     //console.log("Hola al iniciar la app")
-    //setTimeout(getRam,5000)
+    setTimeout(getRam, 10000)
     setTimeout(getCPU, 10000)
   })
 
